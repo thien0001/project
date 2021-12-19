@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/thien/cmd/web/pkg/config"
-	"github.com/thien/cmd/web/pkg/models"
-	"github.com/thien/cmd/web/pkg/render"
+	"github.com/thien0001/cmd/web/pkg/config"
+	"github.com/thien0001/cmd/web/pkg/models"
+	"github.com/thien0001/cmd/web/pkg/render"
 )
 
 // // TemplateData holds data sent from handlers package

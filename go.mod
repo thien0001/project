@@ -1,4 +1,4 @@
-module github.com/thien/cmd/web
+module github.com/thien0001/cmd/web
 
 go 1.17
 

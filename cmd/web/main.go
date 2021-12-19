@@ -8,9 +8,9 @@ import (
 
 	"github.com/alexedwards/scs/v2"
 
-	"github.com/thien/cmd/web/pkg/config"
-	"github.com/thien/cmd/web/pkg/handlers"
-	"github.com/thien/cmd/web/pkg/render"
+	"github.com/thien0001/cmd/web/pkg/config"
+	"github.com/thien0001/cmd/web/pkg/handlers"
+	"github.com/thien0001/cmd/web/pkg/render"
 )
 
 var app config.AppConfig

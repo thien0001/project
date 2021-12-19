@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/thien/cmd/web/pkg/config"
-	"github.com/thien/cmd/web/pkg/models"
+	"github.com/thien0001/cmd/web/pkg/config"
+	"github.com/thien0001/cmd/web/pkg/models"
 )
 
 var functions = template.FuncMap{}

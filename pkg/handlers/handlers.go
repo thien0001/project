@@ -69,3 +69,28 @@ func (m *Respository) About(w http.ResponseWriter, r *http.Request) {
 	})
 
 }
+
+// Reservation renders the make a verservation page and displays form
+func (m *Respository) Rerservation(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "make-reservation.page.html", &models.TemplateData{})
+}
+
+// Generals render the room
+func (m *Respository) Generals(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "generals.page.html", &models.TemplateData{})
+}
+
+// Majors render the room
+func (m *Respository) Majors(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "majors.page.html", &models.TemplateData{})
+}
+
+// Majors render the room
+func (m *Respository) Availability(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "search-availabilly.page.html", &models.TemplateData{})
+}
+
+// Majors render the room
+func (m *Respository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplate(w, "contact.page.html", &models.TemplateData{})
+}

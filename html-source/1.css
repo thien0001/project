@@ -13,3 +13,7 @@
 .room-image {
     width: 50%;
 }
+
+.notie-container {
+    box-shadow: none;
+  }

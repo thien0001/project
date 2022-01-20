@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script type="text/javascript" src="1.js"></script>
+	<!-- <script type="text/javascript" src="1.js"></script> -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
 
-	<link rel="stylesheet" href="/stactic/css/1.css">
+	<link rel="stylesheet" href="/static/css/1.css">
 </head>
 <body >
 	<!-- start_menu -->
@@ -82,7 +82,8 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.0/dist/js/datepicker-full.min.js"></script>
         <script src="https://unpkg.com/notie"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       
@@ -131,63 +132,63 @@
         //  let myEL =  document.getElementById("myParagraph");
         //  myEL.classList.add("redText");
       
-        document.getElementById("colorButton").addEventListener("click", function(){
-          //  let myEl =  document.getElementById("myParagraph");
+      //   document.getElementById("colorButton").addEventListener("click", function(){
+      //     //  let myEl =  document.getElementById("myParagraph");
       
-          // if  (myEl.classList.contains("redText")) {
+      //     // if  (myEl.classList.contains("redText")) {
       
-          // 	myEl.classList.remove("redText");
+      //     // 	myEl.classList.remove("redText");
       
-          // } else {
-          // 	myEl.classList.add("redText");
-          // }
-      
-      
-          // notify("This is my message")
+      //     // } else {
+      //     // 	myEl.classList.add("redText");
+      //     // }
       
       
-      // 		Swal.fire({
-      //   title: 'Error!',
-      //   text: 'Do you want to continue',
-      //   icon: 'error',
-      //   confirmButtonText: 'Cool'
-      // })
+      //     // notify("This is my message")
       
-      //  notifyModal("title", "<em> hello, world</em>", "success", "My Text for the button") 
       
-      let html = `
-          <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">
-            <div class="form-row">
-              <div class="col-md-11">
+      // // 		Swal.fire({
+      // //   title: 'Error!',
+      // //   text: 'Do you want to continue',
+      // //   icon: 'error',
+      // //   confirmButtonText: 'Cool'
+      // // })
+      
+      // //  notifyModal("title", "<em> hello, world</em>", "success", "My Text for the button") 
+      
+      // let html = `
+      //     <form id="check-availability-form" action="" method="post" novalidate class="needs-validation">
+      //       <div class="form-row">
+      //         <div class="col-md-11">
                 
-                  <div class="form-row" id="reservation-dates-modal">
-                    <div class="row">
-                      <div class="col">
-                        <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
-                      </div>
-                      <div class="col">
-                        <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Departure">
-                      </div>
-                    </div>
-                  </div>	
-              </div>
-            </div> 
-          </form>
-      `
+      //             <div class="form-row" id="reservation-dates-modal">
+      //               <div class="row">
+      //                 <div class="col">
+      //                   <input disabled required class="form-control" type="text" name="start" id="start" placeholder="Arrival">
+      //                 </div>
+      //                 <div class="col">
+      //                   <input disabled required class="form-control" type="text" name="end" id="end" placeholder="Departure">
+      //                 </div>
+      //               </div>
+      //             </div>	
+      //         </div>
+      //       </div> 
+      //     </form>
+      // `
       
       
-        attention.custom ({ msg: html,
-          title :"Choose your dates"
+      //   attention.custom ({ msg: html,
+      //     title :"Choose your dates"
       
-        });
+      //   });
       
-        })
+      //   })
           
-        const elem = document.getElementById('reservation-dates');
-          const rangepicker = new DateRangePicker(elem, {
-        // ...options
-        format :"dd-mm-yyyy",
-      }); 
+      //   const elem = document.getElementById('reservation-dates');
+      //     const rangepicker = new DateRangePicker(elem, {
+      //   // ...options
+      //   format :"dd-mm-yyyy",
+      // }); 
       
       
       
@@ -293,20 +294,25 @@
           } = c; 
       
             
-            const { value: formValues } = await Swal.fire({
+            const { value: result } = await Swal.fire({
             title: title,
             html: msg,
             backdrop: false,
             focusConfirm: false,
             showCancelButton: true,
-            willOpen: () => {
-              const elem = document.getElementById('reservation-dates-modal');
-              const rp = new DateRangePicker(elem, {
-                format: 'dd-mm-yyyy',
-                showOnFocus: true,
+            // willOpen: () => {
+            //   const elem = document.getElementById('reservation-dates-modal');
+            //   const rp = new DateRangePicker(elem, {
+            //     format: 'dd-mm-yyyy',
+            //     showOnFocus: true,
                 
-              })
-            },
+            //   })
+            // },
+            willOpen: () => {
+              if (c.willOpen !== undefined) {
+                c.willOpen();
+              }
+            }, 
             preConfirm: () => {
               return [
               document.getElementById('start').value,
@@ -314,15 +320,35 @@
               ]
             },
             didOpen: () => {
-              document.getElementById('start').removeAttribute('disabled');
-              document.getElementById('end').removeAttribute('disabled');
+              // document.getElementById('start').removeAttribute('disabled');
+              // document.getElementById('end').removeAttribute('disabled');
+                if (c.didOpen !== undefined) {
+                  c.didOpen();
+                }
             }
             });
       
-            if (formValues) {
-            Swal.fire(JSON.stringify(formValues))
-            }
+            // if (formValues) {
+            // Swal.fire(JSON.stringify(formValues))
+            // }
+
+             if (result) {
+               if (result.dismiss !== Swal.DismissReason.cancel) {
+                 if (result.value !== "") {
+                    if (c.callback !== undefined) {
+                      c.callback(result);
+                    }
+                 } else {
+                   c.callback(false);
+                 }
+
+               } else {
+                 c.callback(false);
+               }
+             }     
+
         }
+
       
         return {
           toast: toast,

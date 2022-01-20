@@ -10,8 +10,9 @@
 
 			<h1 class="mt-5">Search for Availability</h1>
 				
-				<form action="reservation.html" method="get" novalidate class="needs-validation">
+				<form action="/search-availabilly" method="post" novalidate class="needs-validation">
 					
+					<input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
 						
 						<div class="row">
 							<div class="col">
@@ -50,7 +51,7 @@
 		</div>
 	</div>  
 
-	<div class="row">
+	<!-- <div class="row">
 			<div class="col">
 				<p id="myParagraph">
 					This is some text.
@@ -59,6 +60,22 @@
 					<button id="colorButton" class="btn btn-outline-secondary">Click me</button>
 				</p>
 			</div>
-	</div>
+	</div> -->
+
+{{end}}
+
+
+
+{{define "js"}}
+	<script>
+		   
+		const elem = document.getElementById('reservation-dates');
+        const rangepicker = new DateRangePicker(elem, {
+        // ...options
+        format :"dd-mm-yyyy",
+      }); 
+
+	</script>
+
 
 {{end}}
